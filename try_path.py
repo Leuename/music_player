@@ -1,5 +1,6 @@
 from pathlib import Path
 
-print("The file path is:")
 
-print(Path.cwd())
+
+music_files = Path("music")
+

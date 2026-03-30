@@ -21,9 +21,11 @@ class Song():
     def _getArtistName(self):
         pass
 
-    def _getFilePath(self , filepath):
-        file_part = ""
-    
+    def _getFilePath(self, filepath):
+        
+        self.filePath = Path("music")
+        
+        
     def _getGenre(self):
         pass
 
