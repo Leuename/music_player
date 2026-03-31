@@ -14,13 +14,14 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:black;</string>
+   <string notr="true">background-color:pink;</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <widget class="QTableWidget" name="tableWidget">
      <property name="styleSheet">
-      <string notr="true">color:white;</string>
+      <string notr="true">border:none;
+color:black;</string>
      </property>
     </widget>
    </item>

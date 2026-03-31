@@ -14,11 +14,11 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-import resources
+from . import resources
 
 
-WINDOW_SIZE = QSize(780, 300)
-WINDOW_MINIMUM_SIZE = QSize(680, 250)
+WINDOW_SIZE = QSize(680, 400)
+WINDOW_MINIMUM_SIZE = QSize(680, 400)
 BUTTON_SIZE = QSize(48, 48)
 PRIMARY_BUTTON_SIZE = QSize(58, 58)
 BUTTON_ICON_SIZE = QSize(22, 22)

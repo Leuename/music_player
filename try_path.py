@@ -14,8 +14,4 @@ beng = _getSongTitles()
 
 print(beng)
 
-
-for song_list in song_path.iterdir():
-    with song_list.open() as f:
-        print(f.readlines)        
         

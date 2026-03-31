@@ -6,7 +6,7 @@ from PySide6.QtGui import QIcon
 from PySide6.QtMultimedia import QAudioOutput, QMediaPlayer
 from PySide6.QtWidgets import QApplication, QFileDialog, QMainWindow
 
-from MusicWindow import Ui_MainWindow
+from .MusicWindow import Ui_MainWindow
 
 
 class MainWindow(QMainWindow):
@@ -14,7 +14,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.muted = True
-        self.audioVolumeLevel = 70
+        self.audioVolumeLevel = 50
 
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
