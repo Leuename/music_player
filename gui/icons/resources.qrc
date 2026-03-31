@@ -1,0 +1,17 @@
+<RCC>
+  <qresource>
+    <file>repeat_button.png</file>
+    <file>list_black.png</file>
+    <file>shuffle_black.png</file>
+    <file>list_black.png</file>
+    <file>pause_black.png</file>
+    <file>next_black.png</file>
+    <file>previous_black.png</file>
+    <file>play.png</file>
+    <file>play_white.png</file>
+    <file>play_white_1.png</file>
+    <file>stop.png</file>
+    <file>stop_white.png</file>
+    <file>stop_white_1.png</file>
+  </qresource>
+</RCC>

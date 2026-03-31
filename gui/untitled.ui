@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>630</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>420</width>
+    <height>630</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>420</width>
+    <height>630</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Poppins</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#EEE5E9;</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>550</y>
+     <width>421</width>
+     <height>78</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>421</width>
+     <height>78</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#previous_button,
+QPushButton#next_button,
+QPushButton#shuffle_button,
+QPushButton#repeat_button {
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    qproperty-iconSize: 32px 32px;
+    padding: 0px;
+}
+
+
+QPushButton#previous_button:hover,
+QPushButton#next_button:hover,
+QPushButton#shuffle_button:hover,
+QPushButton#repeat_button:hover {
+    background-color: rgba(255, 255, 255, 20);
+}
+
+QPushButton#previous_button:pressed,
+QPushButton#next_button:pressed,
+QPushButton#shuffle_button:pressed,
+QPushButton#repeat_button:pressed {
+    background-color: rgba(255, 255, 255, 35);
+}
+
+
+QPushButton#shuffle_button:checked,
+QPushButton#repeat_button:checked {
+    background-color: rgba(255, 255, 255, 45);
+}
+</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="shuffle_button">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="icons/resources.qrc">
+        <normaloff>:/shuffle_black.png</normaloff>:/shuffle_black.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="previous_button">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="icons/resources.qrc">
+        <normaloff>:/previous_black.png</normaloff>:/previous_black.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="pp_button">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pp_button {
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    qproperty-iconSize: 32px 32px;
+    padding: 0px;
+}
+
+QPushButton#pp_button:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+QPushButton#pp_button:pressed {
+    background-color: rgb(230, 230, 230);
+}
+
+QPushButton#pp_button:checked {
+    background-color: rgb(235, 235, 235);
+}
+
+QPushButton#pp_button:checked:hover {
+    background-color: rgb(225, 225, 225);
+}
+
+QPushButton#pp_button:disabled {
+    background-color: rgb(210, 210, 210);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="icons/resources.qrc">
+        <normaloff>:/play.png</normaloff>
+        <normalon>:/pause_black.png</normalon>:/play.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="next_button">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="icons/resources.qrc">
+        <normaloff>:/next_black.png</normaloff>:/next_black.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="repeat_button">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="icons/resources.qrc">
+        <normaloff>:/repeat_button.png</normaloff>:/repeat_button.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="list_button">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#list_button {
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    qproperty-iconSize: 32px 32px;
+    padding: 0px;
+}
+QPushButton#list_button:hover {
+    background-color: rgba(255, 255, 255, 20);
+}
+
+QPushButton#list_button:pressed {
+    background-color: rgba(255, 255, 255, 35);
+}
+
+QPushButton#list_button:checked {
+    background-color: rgba(255, 255, 255, 45);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="icons/resources.qrc">
+     <normaloff>:/list_black.png</normaloff>:/list_black.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
